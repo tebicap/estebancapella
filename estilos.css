@@ -1,0 +1,276 @@
+html {
+	display: table;
+    margin: auto;
+    background-image: url("img/engranajes.png");
+    background-repeat: repeat;
+    background-color: #c9d1d9;
+}
+body {
+	text-align: center;
+	/*height: 5000px;*/
+	background-color: none;
+	/*background-image: url("img/engraraya.png");*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+	/*overflow: hidden;*/
+}
+.fon2 {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;								/*REVISAR ALTURA*/
+	background-image: url("img/raya.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.cuerpo {
+	width: 1024px;
+}
+.baner {
+	display: inline-block;
+	margin-left: -17px;
+}
+.baner_div {
+	display: inline-block;
+}
+.pie {
+	display: inline-block;
+	margin-left: -17px;
+}
+.tiras {
+	display: inline-block;
+	height: 200px;
+	width: 1024px;
+	background-color: rgba(0,0,0,0.6);
+	overflow: hidden;
+	box-shadow: 2px 5px 5px rgba(0,0,0,0.4);
+}
+.tiras_separa {
+	height: 10px;
+	width: 1024px;
+	background-color: none;
+}
+.cabeza {
+	display: inline-block;
+	left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: none;
+	border: none;
+	white-space: 0px;
+	float: left;
+}
+.miniaturas {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 0px;
+	padding: none;
+	border: none;
+	white-space: 0px;
+	float: left;
+}
+.miniaturas_div {
+	height: 200px;
+	width: 1024px;
+}
+.cabeza2 {
+	display: inline-block;
+	left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: none;
+	border: none;
+	white-space: 0px;
+	float: right;
+}
+.botones {
+	width: 1024px;
+	height: 1px;
+	text-align: right;
+	padding: none;
+	margin: none;
+	position: fixed;
+	top: 170px;
+	z-index: 1000;
+}
+.portfolio {
+	padding-right: 50px;
+}
+.portfolio_ojo {
+	position: absolute;
+	top: 10px;
+	right: 70px;
+}
+.botonitos {
+	padding-right: 65px;
+	margin-bottom: 15px;
+}
+/*   --------- POPUPS -------------*/
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+.mail_tel {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	background: #0b0b0b;
+	z-index: 2000;
+}
+.mail_teloff {
+	display: none;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	background: #0b0b0b;
+	z-index: 2000;
+}
+.mail_tel a {
+	text-decoration: none;
+}
+.contacto {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	top: 6em;
+	left: 0;
+	background: #0b0b0b;
+	color: white;
+	font-family: verdana, sans-serif;
+	font-size: 4em;
+	text-decoration: none;
+}
+.ok {
+	position: relative;
+	top: 8em;
+	font-family: verdana, sans-serif;
+	font-size: 4em;
+	color: white;
+	background-color: red;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.3em;
+	border-radius: 0.25em;
+	text-decoration: none;
+	text-shadow: 3px 3px 2px #5D0000;
+	box-shadow: 5px 5px 3px #5D0000;
+	cursor: pointer;
+}
+.ok:hover {
+	position: relative;
+	top: 8em;
+	font-family: verdana, sans-serif;
+	font-size: 4em;
+	color: white;
+	background-color: red;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	padding-top: 0.27em;
+	padding-bottom: 0.3em;
+	border-radius: 0.25em;
+	text-decoration: none;
+	text-shadow: 3px 3px 2px #5D0000;
+	box-shadow: 5px 5px 3px #9D0000;
+	cursor: pointer;
+}
+.slideicono {
+	overflow: visible;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	left: 215px;
+	top: 15px;
+	z-index: 100;
+}
+.slideicono img {
+	/* ANIMACION */
+	opacity: 0;
+	animation: slidericono;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+@keyframes slidericono {
+	0% { opacity: 0; }
+	1% { opacity: 1; }
+	2% { opacity: 0; }
+	3% { opacity: 1; }
+	4% { opacity: 0; }
+	5% { opacity: 1; }
+	8% { opacity: 1; }
+	9% { transform: skewX(0deg); opacity: 1; }
+	11% { transform: skewX(8deg); }
+	14% { transform: skewX(0deg); }
+	16% { transform: skewX(8deg); }
+	18% { transform: skewX(0deg); }
+	26% { opacity: 1; }
+	40% { opacity: 0;}
+	97% { opacity: 0;}
+	100% { opacity: 0;}
+}
+.muypronto {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgba(0, 0, 0, 0.96);
+	height: 100%;
+	width: 100%;
+	padding-top: 20em;
+}
+/* 
+
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+
+*/
+/*
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+*/
