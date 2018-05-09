@@ -7,7 +7,7 @@ $(document).ready(function() {
 		image: {
 			verticalFit: true
 		}
-		
+
 	});
 
 	$('.image-popup-fit-width').magnificPopup({
