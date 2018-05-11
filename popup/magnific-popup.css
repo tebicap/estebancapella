@@ -2,6 +2,8 @@
 .mfp-bg {
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: 1042;
@@ -14,6 +16,9 @@
 .mfp-wrap {
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   z-index: 1043;
@@ -28,7 +33,9 @@
   height: 100%;
   left: 0;
   top: 0;
-  padding: 0 8px;
+  bottom: 0;
+  right: 0;
+  padding: 0 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -46,7 +53,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 auto;
+  margin: 0;
   text-align: left;
   z-index: 1045; }
 
@@ -60,6 +67,7 @@
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
   width: 100%;
+	height: auto;
   cursor: auto; }
 
 .mfp-ajax-cur {
@@ -331,9 +339,9 @@ img.mfp-img {
   .mfp-img-mobile .mfp-close {
     top: 0;
     right: 0;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 35px; //original 35px
+    height: 35px; //original 35px
+    line-height: 35px; //original 35px
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     text-align: center;

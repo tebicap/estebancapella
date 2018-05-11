@@ -112,6 +112,8 @@ body {
 /* padding-bottom and top for image */
 .mfp-no-margins img.mfp-img {
 	padding: 0;
+	width: 100%;
+	height: auto;
 }
 /* position of shadow behind the image */
 .mfp-no-margins .mfp-figure:after {
@@ -229,8 +231,8 @@ body {
 	16% { transform: skewX(8deg); }
 	18% { transform: skewX(0deg); }
 	26% { opacity: 1; }
-	40% { opacity: 0;}
-	97% { opacity: 0;}
+	40% { opacity: 1;}
+	97% { opacity: 1;}
 	100% { opacity: 0;}
 }
 .muypronto {
@@ -244,9 +246,9 @@ body {
 	width: 100%;
 	padding-top: 20em;
 }
-/* 
+/*
 
-for zoom animation 
+for zoom animation
 uncomment this part if you haven't added this code anywhere else
 
 */
@@ -256,9 +258,9 @@ uncomment this part if you haven't added this code anywhere else
 .mfp-with-zoom.mfp-bg {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
-	-webkit-transition: all 0.3s ease-out; 
-	-moz-transition: all 0.3s ease-out; 
-	-o-transition: all 0.3s ease-out; 
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
 
@@ -269,7 +271,7 @@ uncomment this part if you haven't added this code anywhere else
 		opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
